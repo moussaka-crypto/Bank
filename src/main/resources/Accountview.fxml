@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="1069.0" style="-fx-background-color: #002366;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.AccountviewController">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="1134.0" minWidth="10.0" prefWidth="809.0" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="963.0" minWidth="10.0" prefWidth="471.0" />
+  </columnConstraints>
+  <rowConstraints>
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <FlowPane prefHeight="550.0" prefWidth="781.0">
+         <children>
+            <Text fill="TURQUOISE" strokeType="OUTSIDE" strokeWidth="0.0" text="Transactions List" wrappingWidth="318.13671875">
+               <font>
+                  <Font name="System Bold Italic" size="36.0" />
+               </font>
+            </Text>
+            <Button fx:id="ascendingButton" mnemonicParsing="false" prefHeight="25.0" prefWidth="51.0" text="Asc" />
+            <Button fx:id="descendingButton" mnemonicParsing="false" prefHeight="25.0" prefWidth="57.0" text="Desc" />
+            <Button fx:id="incomingButton" mnemonicParsing="false" prefHeight="25.0" prefWidth="54.0" text="Inc" />
+            <Button fx:id="outgoingButton" mnemonicParsing="false" prefHeight="25.0" prefWidth="61.0" text="Out" />
+            <Button mnemonicParsing="false" onAction="#switchScene" prefHeight="43.0" prefWidth="145.0" text="Return">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font></Button>
+            <ListView fx:id="transactionListView" prefHeight="480.0" prefWidth="316.0">
+               <contextMenu>
+                  <ContextMenu>
+                    <items>
+                      <MenuItem mnemonicParsing="false" onAction="#deleteTransaction" text="DELETE" />
+                    </items>
+                  </ContextMenu>
+               </contextMenu>
+            </ListView>
+            <Button mnemonicParsing="false" onAction="#addTransaction" prefHeight="58.0" prefWidth="258.0" text="Add Transaction">
+               <font>
+                  <Font name="System Bold" size="28.0" />
+               </font></Button>
+         </children>
+      </FlowPane>
+      <FlowPane prefHeight="550.0" prefWidth="266.0" GridPane.columnIndex="1">
+         <children>
+            <Label prefHeight="54.0" prefWidth="150.0" text="BANK NAME" textFill="TURQUOISE">
+               <font>
+                  <Font name="System Bold Italic" size="24.0" />
+               </font></Label>
+            <TextField fx:id="bankNameField" prefHeight="39.0" prefWidth="201.0" style="-fx-background-color: #89CFF0;">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font></TextField>
+            <Label prefHeight="54.0" prefWidth="150.0" text="ACCOUNT NAME" textFill="TURQUOISE">
+               <font>
+                  <Font name="System Italic" size="16.0" />
+               </font></Label>
+            <TextField fx:id="accountNameField" prefHeight="39.0" prefWidth="201.0" style="-fx-background-color: #89CFF0;">
+               <font>
+                  <Font name="System Italic" size="18.0" />
+               </font></TextField>
+            <Label prefHeight="54.0" prefWidth="150.0" text="CURRENT BALANCE" textFill="TURQUOISE">
+               <font>
+                  <Font name="System Italic" size="16.0" />
+               </font></Label>
+            <TextField fx:id="balanceField" prefHeight="39.0" prefWidth="201.0" style="-fx-background-color: #89CFF0;">
+               <font>
+                  <Font size="18.0" />
+               </font></TextField>
+         </children>
+      </FlowPane>
+   </children>
+</GridPane>

@@ -1,0 +1,12 @@
+[
+{
+  "CLASSNAME": "Payment",
+  "INSTANCE": {
+    "incomingInterest": 0.15,
+    "outgoingInterest": 0.13,
+    "date": "10.01.1988",
+    "description": "Deposit; 1500",
+    "amount": 1500.0
+  }
+}
+]

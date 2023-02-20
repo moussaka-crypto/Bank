@@ -1,0 +1,92 @@
+[
+{
+  "CLASSNAME": "IncomingTransfer",
+  "INSTANCE": {
+    "sender": "First Account",
+    "recipient": "Account Eva",
+    "date": "18.12.2022",
+    "description": "Incoming Transfer",
+    "amount": 999.0
+  }
+},
+{
+  "CLASSNAME": "Payment",
+  "INSTANCE": {
+    "incomingInterest": 0.15,
+    "outgoingInterest": 0.13,
+    "date": "10.01.1988",
+    "description": "Deposit; 1500",
+    "amount": 1500.0
+  }
+},
+{
+  "CLASSNAME": "IncomingTransfer",
+  "INSTANCE": {
+    "sender": "Account Eva",
+    "recipient": "Account Adam",
+    "date": "01.01.2021",
+    "description": "Incoming Transfer; Eva-\u003eAdam; 150",
+    "amount": 150.0
+  }
+},
+{
+  "CLASSNAME": "Payment",
+  "INSTANCE": {
+    "incomingInterest": 0.15,
+    "outgoingInterest": 0.13,
+    "date": "18.12.2022",
+    "description": "Test Payment",
+    "amount": 157.0
+  }
+},
+{
+  "CLASSNAME": "Payment",
+  "INSTANCE": {
+    "incomingInterest": 0.15,
+    "outgoingInterest": 0.13,
+    "date": "18.12.2022",
+    "description": "Test Dialog",
+    "amount": 123.0
+  }
+},
+{
+  "CLASSNAME": "IncomingTransfer",
+  "INSTANCE": {
+    "sender": "test",
+    "recipient": "test",
+    "date": "18.12.2022",
+    "description": "test leere input",
+    "amount": 32.0
+  }
+},
+{
+  "CLASSNAME": "OutgoingTransfer",
+  "INSTANCE": {
+    "sender": "Account Adam",
+    "recipient": "Account Eva",
+    "date": "03.01.2021",
+    "description": "Outgoing Transfer; Adam-\u003eEva; 50",
+    "amount": 50.0
+  }
+},
+{
+  "CLASSNAME": "OutgoingTransfer",
+  "INSTANCE": {
+    "sender": "Account Eva",
+    "recipient": "First Account",
+    "date": "18.12.2022",
+    "description": "Outgoing transfer first",
+    "amount": 517.0
+  }
+},
+{
+  "CLASSNAME": "OutgoingTransfer",
+  "INSTANCE": {
+    "sender": "Account Eva",
+    "recipient": "First Account",
+    "date": "18.12.2022",
+    "description": "Outgoing Transfer",
+    "amount": 675.0
+  }
+}
+]
