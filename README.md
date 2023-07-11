@@ -1,4 +1,1 @@
-# Bank
-
-A demo for a Bank System in Java
-Uni Project
+###A demo for a Banking System I had as a uni project
